@@ -1,5 +1,4 @@
 # Scalable satellite-based delineation of field boundaries with DECODE
-![mantis](images/img_3.png)
 
 Official [mxnet](https://mxnet.incubator.apache.org/) implementation of the paper: ["Scalable satellite-based delineation of field boundaries"](https://arxiv.org/abs/2009.02062), Waldner et al. (2020). This repository contains source code for implementing and training the FracTAL ResUNet as described in the paper.  All models are built with the mxnet DL framework (version < 2.0), under the gluon api. We do not provide pre-trained weights. 
 
