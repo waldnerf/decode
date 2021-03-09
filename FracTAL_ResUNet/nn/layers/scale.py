@@ -1,8 +1,8 @@
 from mxnet  import gluon
 from mxnet.gluon import HybridBlock
 
-from ceecnet.nn.layers.conv2Dnormed import * 
-from ceecnet.utils.get_norm import * 
+from decode.FracTAL_ResUNet.nn.layers.conv2Dnormed import *
+from decode.FracTAL_ResUNet.utils.get_norm import *
 
 class DownSample(HybridBlock):
     def __init__(self, nfilters, factor=2,  _norm_type='BatchNorm', norm_groups=None, **kwargs): 

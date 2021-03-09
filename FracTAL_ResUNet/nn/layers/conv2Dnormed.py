@@ -1,7 +1,7 @@
 import mxnet as mx
 from mxnet import gluon
 from mxnet.gluon import HybridBlock
-from ceecnet.utils.get_norm import * 
+from decode.FracTAL_ResUNet.utils.get_norm import *
 
 
 class Conv2DNormed(HybridBlock):

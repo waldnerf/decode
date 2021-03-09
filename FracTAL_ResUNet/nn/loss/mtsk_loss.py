@@ -1,4 +1,4 @@
-from ceecnet.nn.loss.ftnmt_loss import *
+from FracTAL_ResUNet.nn.loss.ftnmt_loss import *
 
 class mtsk_loss(object):
     """

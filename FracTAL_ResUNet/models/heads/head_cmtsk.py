@@ -2,9 +2,9 @@ from mxnet import gluon
 from mxnet.gluon import HybridBlock 
 
 
-from ceecnet.nn.activations.sigmoid_crisp import *
-from ceecnet.nn.pooling.psp_pooling import *
-from ceecnet.nn.layers.conv2Dnormed import *
+from decode.FracTAL_ResUNet.nn.activations.sigmoid_crisp import *
+from decode.FracTAL_ResUNet.nn.pooling.psp_pooling import *
+from decode.FracTAL_ResUNet.nn.layers.conv2Dnormed import *
 
 # Helper classification head, for a single layer output 
 class HeadSingle(HybridBlock):

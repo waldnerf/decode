@@ -1,8 +1,8 @@
 from mxnet import gluon
 from mxnet.gluon import HybridBlock
 
-from ceecnet.nn.layers.scale import *
-from ceecnet.nn.layers.conv2Dnormed import *
+from decode.FracTAL_ResUNet.nn.layers.scale import *
+from decode.FracTAL_ResUNet.nn.layers.conv2Dnormed import *
 
 
 """

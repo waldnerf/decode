@@ -1,8 +1,8 @@
 from mxnet import gluon
 from mxnet.gluon import HybridBlock
-from ceecnet.nn.layers.conv2Dnormed import *
-from ceecnet.utils.get_norm import *
-from ceecnet.nn.layers.attention import *
+from decode.FracTAL_ResUNet.nn.layers.conv2Dnormed import *
+from decode.FracTAL_ResUNet.utils.get_norm import *
+from decode.FracTAL_ResUNet.nn.layers.attention import *
 
 class ResNet_v2_block(HybridBlock):
     """

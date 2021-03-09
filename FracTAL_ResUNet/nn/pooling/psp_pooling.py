@@ -1,6 +1,6 @@
 from mxnet import gluon
 from mxnet.gluon import  HybridBlock
-from ceecnet.nn.layers.conv2Dnormed import *
+from decode.FracTAL_ResUNet.nn.layers.conv2Dnormed import *
 
 class PSP_Pooling(gluon.HybridBlock):
     def __init__(self, nfilters, depth=4, _norm_type = 'BatchNorm', norm_groups=None, mob=False, **kwards):
