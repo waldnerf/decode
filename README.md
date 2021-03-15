@@ -43,11 +43,8 @@ As a condition of this licence, you agree that where you make any adaptations, m
 If you find the contents of this repository useful for your research, please cite:
 ```
 @article{waldner2020scalable,
-    title={Scalable satellite-based delineation of field boundaries},
+    title={Detect, consolidate, delineate: scalable mapping of field boundaries using satellite images},
     author={François Waldner and Foivos I. Diakogiannis and Kathryn Batchelor and Michael Ciccotosto-Camp and Elizabeth Cooper Williams and Chris Herrmann and Gonzalo Mata and Andrew Toovey},
-    year={2020},
-    eprint={},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+    year={2021}
 }
 `
