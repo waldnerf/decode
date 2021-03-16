@@ -38,7 +38,7 @@ def InstSegm(extent, boundary, t_ext=0.4, t_bound=0.2):
     instances = hg.labelisation_horizontal_cut_from_threshold(
         tree,
         altitudes,
-        threshold=t_bound)
+        threshold=t_bound).astype(np.float)
 
     instances[ext_binary == 0] = np.nan
 
