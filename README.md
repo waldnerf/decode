@@ -10,23 +10,22 @@ Inference examples for six areas in Australia.
 
 ```
 .
-├── demo
+├── examples
 ├── images
-├── models
-│   ├── heads
-│   └── semanticsegmentation
-│       └── x_unet
-├── nn
-│   ├── activations
-│   ├── layers
-│   ├── loss
-│   ├── pooling
-│   └── units
-├── src
+├── FracTAL_ResUNet
+    │   ├── heads
+    │   └── semanticsegmentation
+    │       └── x_unet
+    ├── nn
+    │   ├── activations
+    │   ├── layers
+    │   ├── loss
+    │   ├── pooling
+    │   └── units
 └── postprocessing
 ```
 
-In  ```demo```, there are notebooks that 1) show how to initiate a Fractal ResUNet model, and perform forward and multitasking backward operations and 2) that illustrate how to perform instance segmantion using hierarchical watershed segmentations.
+In  ```examples```, there are notebooks that 1) show how to initiate a Fractal ResUNet model, and perform forward and multitasking backward operations and 2) that illustrate how to perform instance segmantion using hierarchical watershed segmentations.
 
 
 ### License
