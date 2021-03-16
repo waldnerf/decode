@@ -2,18 +2,15 @@
 
 Official [mxnet](https://mxnet.incubator.apache.org/) implementation of the paper: ["Detect, consolidate, delineate: scalable mapping of field boundaries using satellite images"](https://arxiv.org/abs/2009.02062), Waldner et al. (2021). This repository contains source code for implementing and training the FracTAL ResUNet as described in the paper.  All models are built with the mxnet DL framework (version < 2.0), under the gluon api. We do not provide pre-trained weights. 
 
-Inference examples for six areas in Australia. From left to right, input image date 1, input image date 2, ground truth, inference, confidence heat map for the segmentation task. 
+Inference examples for six areas in Australia.
 ![mantis](images/decode.png)
-
 
 
 ### Directory structure: 
 
 ```
 .
-├── chopchop
 ├── demo
-├── doc
 ├── images
 ├── models
 │   ├── heads
@@ -26,10 +23,10 @@ Inference examples for six areas in Australia. From left to right, input image d
 │   ├── pooling
 │   └── units
 ├── src
-└── utils
+└── postprocessing
 ```
 
-In directory ```chopchop``` exists code for splitting triplets of raster files (date1, date2, ground truth) into small training patches. It is tailored on the LEVIR CD dataset. In  ```demo``` exists a notebooks that shows how to initiate a mantis ceecnet model, and perform forward and multitasking backward operations. In ```models/changedetection/mantis``` exists a generic definition for arbitrary depth and number of filters, that are described in our manuscript. In ```nn``` exist all the necessary building blocks to construct the models we present, as well as loss function definitions. In particular, in ```nn/loss``` we provide the average fractal Tanimoto with dual (file ```nn/loss/ftnmt_loss.py```), as well as a class that can be used for multitasking loss training. Users of this method may want to write their own custom implementation for multitasking training, based on the ```ftnmt_loss.py``` file. See ```demo``` for example usage with a specific ground truth labels configuration. In ```src``` we provide a mxnet Dataset class, as well as a normalization class. Finally, in utils, there exist a function for selecting BatchNormalization, or GroupNorm, as a paremeter. 
+In  ```demo```, there are notebooks that 1) show how to initiate a Fractal ResUNet model, and perform forward and multitasking backward operations and 2) that illustrate how to perform instance segmantion using hierarchical watershed segmentations.
 
 
 ### License
